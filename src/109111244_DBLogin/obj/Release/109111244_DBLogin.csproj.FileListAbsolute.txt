@@ -1,0 +1,12 @@
+Z:\vs_Project\109111244_DBLogin\obj\Release\109111244_DBLogin.csproj.AssemblyReference.cache
+Z:\vs_Project\109111244_DBLogin\obj\Release\_109111244_DBLogin.EM01.resources
+Z:\vs_Project\109111244_DBLogin\obj\Release\_109111244_DBLogin.Properties.Resources.resources
+Z:\vs_Project\109111244_DBLogin\obj\Release\_109111244_DBLogin.Service.resources
+Z:\vs_Project\109111244_DBLogin\obj\Release\109111244_DBLogin.csproj.GenerateResource.cache
+Z:\vs_Project\109111244_DBLogin\obj\Release\109111244_DBLogin.csproj.CoreCompileInputs.cache
+Z:\vs_Project\109111244_DBLogin\obj\Release\109111244_DBLogin.exe
+Z:\vs_Project\109111244_DBLogin\obj\Release\109111244_DBLogin.pdb
+Z:\vs_Project\109111244_DBLogin\bin\Release\109111244_DBLogin.exe.config
+Z:\vs_Project\109111244_DBLogin\bin\Release\109111244_DBLogin.exe
+Z:\vs_Project\109111244_DBLogin\bin\Release\109111244_DBLogin.pdb
+Z:\vs_Project\109111244_DBLogin\obj\Release\_109111244_DBLogin.Form1.resources
