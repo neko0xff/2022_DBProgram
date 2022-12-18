@@ -28,10 +28,7 @@ namespace _109111244_DBLogin
 
         private void button_EM01_Click(object sender, EventArgs e)
         {
-            form_em01.Close();
-            form_em01.Dispose();
-            form_em01 = new EM01();
-            form_em01.Show();
+            form_em01.ShowDialog();
         }
 
         private void Service_Load(object sender, EventArgs e)

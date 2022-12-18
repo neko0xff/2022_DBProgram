@@ -52,7 +52,7 @@ namespace _109111244_DBLogin
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_people = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -90,6 +90,7 @@ namespace _109111244_DBLogin
             this.button_Search.TabIndex = 3;
             this.button_Search.Text = "查詢";
             this.button_Search.UseVisualStyleBackColor = true;
+            this.button_Search.Click += new System.EventHandler(this.button_Search_Click);
             // 
             // button_Update
             // 
@@ -259,7 +260,7 @@ namespace _109111244_DBLogin
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.comboBox_people);
             this.groupBox3.Location = new System.Drawing.Point(24, 30);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(145, 84);
@@ -276,13 +277,15 @@ namespace _109111244_DBLogin
             this.label7.TabIndex = 1;
             this.label7.Text = "請選擇[姓名]進行查詢";
             // 
-            // comboBox1
+            // comboBox_people
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 0;
+            this.comboBox_people.CausesValidation = false;
+            this.comboBox_people.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_people.FormattingEnabled = true;
+            this.comboBox_people.Location = new System.Drawing.Point(15, 49);
+            this.comboBox_people.Name = "comboBox_people";
+            this.comboBox_people.Size = new System.Drawing.Size(121, 20);
+            this.comboBox_people.TabIndex = 0;
             // 
             // EM01
             // 
@@ -294,6 +297,8 @@ namespace _109111244_DBLogin
             this.Controls.Add(this.groupBox1);
             this.Name = "EM01";
             this.Text = "EM01-員工資料維護";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.EM01_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -326,7 +331,7 @@ namespace _109111244_DBLogin
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox_people;
         private System.Windows.Forms.DateTimePicker dateTimePicker_birday;
         private System.Windows.Forms.Label label8;
     }

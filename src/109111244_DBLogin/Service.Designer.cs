@@ -71,13 +71,12 @@ namespace _109111244_DBLogin
             // 
             // button_close
             // 
-            this.button_close.Location = new System.Drawing.Point(130, 199);
+            this.button_close.Location = new System.Drawing.Point(406, 59);
             this.button_close.Name = "button_close";
             this.button_close.Size = new System.Drawing.Size(93, 31);
             this.button_close.TabIndex = 2;
             this.button_close.Text = "離開";
             this.button_close.UseVisualStyleBackColor = true;
-            this.button_close.UseWaitCursor = true;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
             // 
             // Service
@@ -85,15 +84,17 @@ namespace _109111244_DBLogin
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(361, 266);
+            this.ClientSize = new System.Drawing.Size(685, 239);
             this.Controls.Add(this.button_close);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Service";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "陽春資訊系統 V1.0.0";
-            this.UseWaitCursor = true;
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Service_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

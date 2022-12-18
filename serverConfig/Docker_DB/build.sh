@@ -1,0 +1,1 @@
+docker build -t neko_0xff/db_docker:laster .

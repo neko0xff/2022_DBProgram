@@ -13,11 +13,48 @@ namespace _109111244_DBLogin
 {
     public partial class Form1 : Form
     {
-        Service form_service;
+        Service form_service; 
+        
         public Form1()
         {
             InitializeComponent();
             form_service = new Service();
+        }
+
+        /*建立連線字串*/
+        public string Msg_ServerSource
+        {
+            set
+            {
+                textBox_ServerSource.Text = value;
+            }
+            get
+            {
+                return textBox_ServerSource.Text;
+            }
+        }
+
+        public string Msg_ServerUser
+        {
+            set
+            {
+                textBox_ServerUser.Text = value;
+            }
+            get
+            {
+                return textBox_ServerUser.Text;
+            }
+        }
+        public string Msg_ServerPassword
+        {
+            set
+            {
+                textBox_ServerPassword.Text = value;
+            }
+            get
+            {
+                return textBox_ServerPassword.Text;
+            }
         }
 
         private void button_Send_Click(object sender, EventArgs e)
@@ -50,6 +87,7 @@ namespace _109111244_DBLogin
                 if (iCount == 1)
                 {
                     MessageBox.Show(this, textBox_IDUser.Text + "歡迎使用!", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    form_service.Show();
                 }
                 else
                 {
@@ -57,11 +95,8 @@ namespace _109111244_DBLogin
                 }
 
                 //this.Hide(); // 把表單隱藏
-                form_service.Close();
-                form_service.Dispose();
-                form_service = new Service();
-                form_service.ShowDialog();
-
+                //form_service.Close();
+                //form_service.Dispose();
             }
             catch (Exception ex) //出問題時
             {
@@ -83,6 +118,11 @@ namespace _109111244_DBLogin
             this.Close();
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            textBox_ServerSource.Text = ".\\SQLEXPRESS";
+            textBox_ServerUser.Text = "sa";
+            textBox_ServerPassword.Text = "oitmis";
+        }
     }
 }

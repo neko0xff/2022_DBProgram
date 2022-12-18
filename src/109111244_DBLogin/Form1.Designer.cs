@@ -68,7 +68,7 @@ namespace _109111244_DBLogin
             this.textBox_IDUser.Font = new System.Drawing.Font("新細明體", 10F);
             this.textBox_IDUser.Location = new System.Drawing.Point(132, 44);
             this.textBox_IDUser.Name = "textBox_IDUser";
-            this.textBox_IDUser.Size = new System.Drawing.Size(100, 23);
+            this.textBox_IDUser.Size = new System.Drawing.Size(136, 23);
             this.textBox_IDUser.TabIndex = 1;
             this.textBox_IDUser.Text = "李鴻章";
             // 
@@ -77,10 +77,10 @@ namespace _109111244_DBLogin
             this.textBox_IDPassword.Font = new System.Drawing.Font("新細明體", 10F);
             this.textBox_IDPassword.Location = new System.Drawing.Point(132, 77);
             this.textBox_IDPassword.Name = "textBox_IDPassword";
-            this.textBox_IDPassword.Size = new System.Drawing.Size(100, 23);
+            this.textBox_IDPassword.PasswordChar = '*';
+            this.textBox_IDPassword.Size = new System.Drawing.Size(136, 23);
             this.textBox_IDPassword.TabIndex = 3;
             this.textBox_IDPassword.Text = "A123456789";
-            this.textBox_IDPassword.UseSystemPasswordChar = true;
             // 
             // label_passwd
             // 
@@ -179,7 +179,6 @@ namespace _109111244_DBLogin
             this.textBox_ServerSource.Name = "textBox_ServerSource";
             this.textBox_ServerSource.Size = new System.Drawing.Size(100, 23);
             this.textBox_ServerSource.TabIndex = 3;
-            this.textBox_ServerSource.Text = ".\\SQLEXPRESS";
             // 
             // label1
             // 
@@ -231,7 +230,7 @@ namespace _109111244_DBLogin
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("標楷體", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(62, 40);
+            this.label2.Location = new System.Drawing.Point(62, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 27);
             this.label2.TabIndex = 10;
@@ -249,6 +248,7 @@ namespace _109111244_DBLogin
             this.Controls.Add(this.button_Send);
             this.Name = "Form1";
             this.Text = "User Login";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
